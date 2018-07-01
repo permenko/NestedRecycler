@@ -16,4 +16,3 @@ public class SmallViewHolder extends RecyclerView.ViewHolder {
     image.setOnClickListener(clickListener);
   }
 }
-e
