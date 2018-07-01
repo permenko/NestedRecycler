@@ -10,9 +10,9 @@ public class BigViewHolder extends RecyclerView.ViewHolder {
     super(itemView);
   }
 
-  public void init(View.OnClickListener clickListener) {
+  public void init(SmallAdapter smallAdapter, View.OnClickListener clickListener) {
     RecyclerView horizontalRecycler = (RecyclerView) itemView;
     horizontalRecycler.setLayoutManager(new LinearLayoutManager(itemView.getContext(), LinearLayoutManager.HORIZONTAL, false));
-    horizontalRecycler.setAdapter(new SmallAdapter(clickListener));
+    horizontalRecycler.setAdapter(smallAdapter);
   }
 }

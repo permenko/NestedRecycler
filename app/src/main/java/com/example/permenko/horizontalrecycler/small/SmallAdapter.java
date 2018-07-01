@@ -10,21 +10,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SmallAdapter extends RecyclerView.Adapter<SmallViewHolder> {
-  private final List<String> data = new ArrayList<>();
   private final View.OnClickListener clickListener;
+  private final List<String> data = new ArrayList<>();
 
   public SmallAdapter(View.OnClickListener clickListener) {
-    this.clickListener = clickListener;
     data.add("Small 0");
     data.add("Small 1");
     data.add("Small 2");
-    data.add("Small 3");
-    data.add("Small 4");
-    data.add("Small 5");
-    data.add("Small 6");
-    data.add("Small 7");
-    data.add("Small 8");
-    data.add("Small 9");
+    this.clickListener = clickListener;
   }
 
   @NonNull @Override public SmallViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {

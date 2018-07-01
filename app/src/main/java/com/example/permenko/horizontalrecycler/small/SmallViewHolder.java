@@ -1,5 +1,6 @@
 package com.example.permenko.horizontalrecycler.small;
 
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -13,6 +14,7 @@ public class SmallViewHolder extends RecyclerView.ViewHolder {
   public void init(String str, final View.OnClickListener clickListener) {
     final ImageView image = itemView.findViewById(R.id.item_image);
     image.setTag(str);
+    ViewCompat.setTransitionName(image, str);
     image.setOnClickListener(clickListener);
   }
 }
